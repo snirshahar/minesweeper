@@ -1,0 +1,135 @@
+body {
+    background-color: darkcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.header {
+    text-align: center;
+    color: rgb(235, 183, 41);
+    text-decoration: underline;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.game-container .game-over {
+    font-size: 30px;
+    display: none;
+    color: rgb(158, 0, 0);
+    border-color: rgb(173, 127, 127);
+    border-block-width: 20px;
+    margin: 3px;
+    padding: 3px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.game-container .health {
+    text-align: center;
+}
+
+.game-container .level-buttons-container {
+    text-align: center;
+}
+
+.game-container .level-buttons-container .level-button {
+    text-align: center;
+    display: inline-block;
+    background-color: burlywood;
+    margin: 3px;
+    padding: 3px;
+}
+
+.game-container .game-board {
+    text-align: center;
+    display: inline-block;
+}
+
+.game-container .game-board table {
+    background-color: black;
+    display: inline-block;
+}
+
+.game-container .game-board .board-cell {
+    background-color: lightgrey;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.game-container .safe-button .game-button {
+    display: inline-block;
+    padding: 12px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+    margin: 20px;
+}
+
+.game-container .safe-button .game-button:hover {
+    background-color: #3e8e41
+}
+
+.game-container .safe-button .game-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    margin: 20px;
+}
+
+.game-container .game-smiley {
+    font-size: 150%;
+    cursor: pointer;
+}
+
+.game-container .game-smiley:hover {
+    font-size: 175%;
+}
+
+.game-container .game-board .board-cell:hover {
+    background-color: rgb(106, 124, 123);
+    cursor: pointer;
+}
+
+.game-container .game-board .board-cell.clicked {
+    background-color: rgb(106, 124, 123);
+}
+
+.game-container .game-board .board-cell.bombed {
+    background-color: crimson;
+}
+
+.game-container .game-board .board-cell.safe {
+    background-color: rgb(0, 70, 136);
+}
+
+.game-container .game-button {
+    text-align: center;
+    display: inline-block;
+    background-color: lightgrey;
+    margin: 3px;
+    padding: 3px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 9px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snir's MineSweeper Game</title>
+    <link rel="stylesheet" href="css/MineSweeperCSS.css">
+</head>
+
+<body oncontextmenu="return false;" onload="initGame()">
+
+    <div class="header">
+        <h1>Mine Sweeper</h1>
+    </div>
+
+    <div class="game-container">
+        <div class="game-over"></div>
+        <div class="lives">
+            <h2>Lives: <span></span></h2>
+        </div>
+        <div class="safe-button">
+            <button onclick="safeClickBtn(this)" class="game-button">Safe Clicks Left: <span></span></button>
+        </div>
+        <div class="level-buttons-container">
+            <button onclick="levelSet(0)" class="game-button">Beginner</button>
+            <button onclick="levelSet(1)" class="game-button">Professional</button>
+            <button onclick="levelSet(2)" class="game-button">World Class</button>
+            <button onclick="initGame()" class="game-button">New Game</button>
+            <div onclick="initGame()" class="game-smiley"></div>
+        </div>
+        <div class="game-board"></div>
+        <br />
+        <div class="stopwatch">Time: <span>00.00</span></div>
+        <br />
+    </div>
+
+    <div class="footer">
+        <h2>Minesweeper is a single-player puzzle computer game. <br> The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in
+            each field.<br> The game originates from the 1960s, and has been written for many computing platforms in use today. It has many variations and offshoots.</h2>
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/gameboard.js"></script>
+    <script type="text/javascript">
+        localStorage.setItem("Beginner Record", 20)
+        localStorage.setItem("Professional Record", 35)
+        localStorage.setItem("World Class Record", 48)
+    </script>
+
+</body>
+
+</html>
